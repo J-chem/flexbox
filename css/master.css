@@ -1,0 +1,125 @@
+/* ----- ALL ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----- TAGS ----- */
+
+
+/* ----- CLASS ----- */
+.menu-container {
+  color: grey;
+  background-color: blue;
+  padding: 20px 0;
+
+  /* FLEXBOX */
+  display: flex; /* this makes the container a FLEX container */
+  justify-content: center; /* horizontal alignment of items in container */
+  /*
+   * JUSTIFY-CONTENT VALUES
+   * center
+   * flex-start -> float left
+   * flex-end -> float right
+   * space-around -> equal whitespace
+   * space-between -> left and right pushed in corner
+   */
+}
+
+.menu {
+  border: 1px solid grey;
+  width: 900px;
+
+  display: flex;
+  justify-content: space-between; /* will make colums of all items */
+}
+
+.links {
+  border: 1px solid grey;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login {
+  margin-left: 20px;
+}
+
+.header-container {
+  color: #5995DA;
+  background-color: #D6E9FE;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 900px;
+  height: 300px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*
+   * ALIGN-ITEMS VALUES:
+   * center
+   * flex-start -> top
+   * flex-end -> bottom
+   * stretch
+   * baseline
+   */
+}
+
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.photo-grid-item {
+  border: 1px solid grey;
+  width: 300px;
+  height: 300px;
+}
+
+.first-item {
+  order: 1;
+}
+
+.last-item {
+  order: -1;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  border: 1px solid grey;
+  background-color: #D6E9FE;
+  height: 200px;
+  flex: 1; /* tells the item to stretch and match the width of .footer*/
+}
+
+.footer-one,
+.footer-three {
+  background-color: #5995DA;
+  flex: initial;
+  width: 300px;
+}
+
+/* .footer-three {
+  flex: 2;
+} */
+/* ----- ID ----- */
+/* #test {
+  background-color: yellow;
+} */
